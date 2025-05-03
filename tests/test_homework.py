@@ -4,6 +4,7 @@ import os
 import subprocess
 
 
+# python3 -m homework/src data/input data/output
 def test_homework():
     """Test Word Count"""
 
@@ -21,7 +22,7 @@ def test_homework():
 
     try:
         subprocess.run(
-            ["python3", "-m", "homework", "data/input", "data/output"],
+            ["python3", "-m", "homework.src", "data/input", "data/output"],
             check=True,
         )
     except subprocess.CalledProcessError as e:

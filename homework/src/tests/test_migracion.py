@@ -1,5 +1,7 @@
 import os
 
+from ..src.wordcount import main
+
 
 def test_migracion():
     if not os.path.exists("data/output/results.tsv"):

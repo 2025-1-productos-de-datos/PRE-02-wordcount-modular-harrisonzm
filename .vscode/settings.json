@@ -13,4 +13,8 @@
         "black"
     ],
     "editor.detectIndentation": false,
+    "python.analysis.extraPaths": [
+        "./homework/src",
+        "./homework/src"
+    ],
 }
