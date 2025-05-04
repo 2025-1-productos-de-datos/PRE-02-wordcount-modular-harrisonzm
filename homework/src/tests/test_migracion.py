@@ -4,11 +4,11 @@ from homework.src.wordcount import main
 
 
 def test_migracion():
-    if not os.path.exists("data/output/results.tsv"):
-        raise FileNotFoundError("El archivo no existe ")
+    if not os.path.exists("data/output/wordcount.tsv"):
+        main()
 
     results = {}
-    with open("data/output/results.tsv", "r", encoding="utf-8") as f:
+    with open("data/output/wordcount.tsv", "r", encoding="utf-8") as f:
         lines = f.readlines()
         for line in lines:
             pey, value = line.strip().split("\t")
